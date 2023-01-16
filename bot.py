@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 API_KEY = os.getenv('API_KEY') if os.getenv(
-    'API_KEY') else os.environ['API_KEY']
+    'API_KEY') else os.environ.get('API_KEY')
 bot = telebot.TeleBot(API_KEY)
 
 
