@@ -51,4 +51,4 @@ def hello(message):
     exec_fn(bot.send_message, message.chat.id, "Hello!")
 
 
-bot.polling()
+bot.polling(non_stop=True)
